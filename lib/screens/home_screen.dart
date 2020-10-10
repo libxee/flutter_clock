@@ -10,7 +10,7 @@ class HomeScreen extends StatelessWidget {
     SizeConfig().init(context);
     return Scaffold(
       appBar: buildAppBar(context),
-//      body: Body(),
+      body: Body(),
     );
   }
 
@@ -29,22 +29,19 @@ class HomeScreen extends StatelessWidget {
 
   Padding buildAddButton(BuildContext context) {
     return Padding(
-      padding:
-          EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(10)),
-      child: InkWell(
-        onTap: () {},
-        child: Container(
-          width: getProportionateScreenWidth(32),
-          decoration: BoxDecoration(
-            color: Theme.of(context).primaryColor,
-            shape: BoxShape.circle,
+        padding:
+            EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(10)),
+        child: InkWell(
+          onTap: () {},
+          child: Container(
+            width: getProportionateScreenWidth(32),
+            decoration: BoxDecoration(
+                color: Theme.of(context).primaryColor, shape: BoxShape.circle),
+            child: Icon(
+              Icons.add,
+              color: Colors.white,
+            ),
           ),
-          child: Icon(
-            Icons.add,
-            color: Colors.white,
-          ),
-        ),
-      ),
-    );
+        ));
   }
 }
