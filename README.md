@@ -1,4 +1,2 @@
 
 ### UI
-
-![Preview](/intro.gif)
